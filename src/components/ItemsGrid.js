@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const ItemsGrid = styled.div`
     display:grid;
-    grid-template-rows: 0.5fr auto;
+    grid-template-rows: 166px auto;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items:center;
     align-items:center;

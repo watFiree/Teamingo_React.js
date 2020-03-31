@@ -1,10 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Build with 
- ⋅⋅* React.js
- ⋅⋅* styled components
- ⋅⋅* React Router
- ⋅⋅* React Redux
+## Build with
+
+ + React.js
+ + styled components
+ + React Router
+ + React Redux
  
 ## Available Scripts
 

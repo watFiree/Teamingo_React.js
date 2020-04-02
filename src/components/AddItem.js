@@ -11,14 +11,22 @@ const Wrapper = styled.div`
     border: 2px solid darkorange;
     position:absolute;
     background-color:white;
-    z-index:9999;
+    z-index:99999;
     position: absolute;
     display:flex;
     align-items:center;
     flex-direction:column;
     top: 50%;
     right: 50%;
+    
     transform: translate(50%, -50%);
+    @media (max-width: 1200px){
+        width:75vw;
+        height:85vh;
+    }
+    @media (max-width: 600px){
+        width:85vw;
+    }
     p{
         margin:0;
         font-weight:700;

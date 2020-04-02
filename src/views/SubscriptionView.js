@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     @media (max-width: 1180px){
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
    }
 `;
 const Heading = styled.div`
@@ -49,7 +49,7 @@ const Card = styled.div`
     @media (max-width: 600px){
     width:60%;
     height:80%;
-    margin-top: 100px;
+    margin-top: 50px;
    }
 
     p{

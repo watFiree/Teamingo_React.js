@@ -19,9 +19,6 @@ const Wrapper = styled.div`
     &:hover{
         cursor: pointer;
     }
-    @media (max-width: 1250px){
-        top:-40px;
-    }
 `;
 
 const Account = ({username,profilephoto}) => (

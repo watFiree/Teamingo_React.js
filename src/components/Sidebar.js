@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
     @media (max-width: 1250px){
-        height:250px;
+        height:200px;
         z-index:9999;
         justify-content: space-between;
     }
@@ -100,8 +100,10 @@ const Option = styled.div`
 `;
 
 const Heading = styled(Header)`
-        margin-top:80px;
-
+    margin-top:80px;
+    @media (max-width: 1250px){
+        margin-top:50px;
+    }
 `;
 
 const Sidebar = ()=> (

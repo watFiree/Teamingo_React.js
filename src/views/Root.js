@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     @media (max-width: 1250px){
         width:100%;
         grid-template-columns:auto;
-        grid-template-rows:300px auto;
+        grid-template-rows:200px auto;
     }
 `;
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom'
+import {Redirect,Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {connect} from 'react-redux'
-import {useLocation, useHistory} from 'react-router-dom'
+import {useLocation} from 'react-router-dom'
 import Header from "../components/Header"
 import Account from '../components/Account';
 import Btn from '../components/Button';
@@ -49,11 +49,14 @@ const Buttons = styled.div`
 const Button = styled(Btn)`
     width: 10%;
     height:50%;
+    @media (max-width: 600px){
+        width:25%;
+        height:70%;
+   }
 `;
 
 const ItemDetailView = ({teams})=>{
     const location = useLocation();
-    const history = useHistory();
     let id = parseInt(location.pathname.slice(-1));
     const data = teams.map(({items})=> items.filter((item) => item.id === id).find(item => item.lenght !== 0)).filter(item => item !== undefined)[0];
     console.log(!!data);
@@ -68,7 +71,7 @@ const ItemDetailView = ({teams})=>{
         {data.content}
         </Content>
         <Buttons>
-            <Button margin onClick={() =>history.go(-1)} >Go back</Button>
+            <Button margin as={Link} to="/home" >Go back</Button>
         </Buttons>
     </Wrapper>) : (<Redirect to="/404" />)
     
